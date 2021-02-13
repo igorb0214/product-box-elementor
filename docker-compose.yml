@@ -1,0 +1,9 @@
+version: '3.5'
+services:
+  elementor:
+    image: image-elem
+    ports:
+      - "80:80"
+    volumes:
+      - "C:/development/projects/product-box-elementor:/var/www/html"
+
