@@ -2,7 +2,7 @@
 
 ## Installation
 - pull repository:<br/>
-https://github.com/igorb0214/product-box-elementor.git
+https://github.com/igorb0214/product-box-elementor.git (current repository)
 - change volumes in `docker-compose.yml` file to local project path.<br/>
 
 
