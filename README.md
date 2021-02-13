@@ -1,4 +1,4 @@
-# product-boxes-elementor
+# product-box-elementor
 
 ## Installation
 - pull repository:<br/>
