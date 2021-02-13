@@ -1,7 +1,7 @@
 version: '3.5'
 services:
   elementor:
-    image: image-elem
+    image: docker.pkg.github.com/igorb0214/product-box-elementor/product-box-elementor:master
     ports:
       - "80:80"
     volumes:
