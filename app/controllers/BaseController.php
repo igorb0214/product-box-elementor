@@ -21,7 +21,7 @@ abstract class BaseController
 
 		extract($data);
 		ob_start();
-		require($viewFile);
+		require(str_replace('\\', '/', $viewFile));
 		$output = ob_get_contents();
 		ob_end_clean();
 

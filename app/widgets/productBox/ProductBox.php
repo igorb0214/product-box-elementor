@@ -51,7 +51,7 @@ class ProductBox extends BaseController
 	 */
 	public function run(): string {
 
-		return $this->renderLayout(str_replace('\\', '/', __NAMESPACE__) . '/views/index.phtml', [
+		return $this->renderLayout(__NAMESPACE__ . '/views/index.phtml', [
 			'productId'   => $this->productId,
 			'image'       => $this->image,
 			'title'       => $this->title,
