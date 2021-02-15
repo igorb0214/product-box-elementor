@@ -19,7 +19,7 @@ abstract class ProductBox
 	 */
 	public static function getAllData(): array {
 
-		$string = file_get_contents(__NAMESPACE__ . '/' . 'product_box_data.json');
+		$string = file_get_contents(str_replace('\\', '/', __NAMESPACE__) . '/' . 'product_box_data.json');
 
 		return json_decode($string, true) ?? [];
 
@@ -33,7 +33,7 @@ abstract class ProductBox
 	 */
 	public static function getDescriptionById(int $productBoxId): string {
 
-		$string = file_get_contents(__NAMESPACE__ . '/' . 'product_box_data.json');
+		$string = file_get_contents(str_replace('\\', '/', __NAMESPACE__) . '/' . 'product_box_data.json');
 
 		return json_decode($string, true)[$productBoxId]['description'] ?? '';
 

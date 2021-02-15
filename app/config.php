@@ -6,7 +6,7 @@
  */
 function autoload(string $className): void {
 
-	$file = dirname(__DIR__) . '/' . $className . '.php';
+	$file = str_replace('\\', '/', dirname(__DIR__) . '/' . $className . '.php');
 
 	if(file_exists($file)) {
 		require_once($file);

@@ -38,7 +38,7 @@ class Index extends BaseController {
 		$modalPopupHtml = (new ModalPopup())->run();//create popup widget
 
 		//render view
-		$this->renderLayout(__DIR__ . '/app/views/index.phtml', [
+		$this->renderLayout(dirname(__DIR__) . '/views/index.phtml', [
 			'productBoxHtml' => $productBoxHtml,
 			'modalHtml'      => $modalPopupHtml,
 		]);

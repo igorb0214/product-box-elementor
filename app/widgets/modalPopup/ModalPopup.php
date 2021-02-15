@@ -32,7 +32,7 @@ class ModalPopup extends BaseController
 	 */
 	public function run(): string {
 
-		return $this->renderLayout(__NAMESPACE__ . '/views/index.phtml', ['popupContent'=>$this->popupContent], true);
+		return $this->renderLayout(str_replace('\\', '/', __NAMESPACE__) . '/views/index.phtml', ['popupContent'=>$this->popupContent], true);
 
 	}
 
