@@ -33,9 +33,7 @@ abstract class ProductBox
 	 */
 	public static function getDescriptionById(int $productBoxId): string {
 
-		$string = file_get_contents(str_replace('\\', '/', __NAMESPACE__) . '/' . 'product_box_data.json');
-
-		return json_decode($string, true)[$productBoxId]['description'] ?? '';
+		return self::getAllData()[$productBoxId]['description'] ?? '';
 
 	}
 
