@@ -16,6 +16,7 @@ $index->run();
 
 ?>
 
+
 <script src="/app/public/main.js"></script>
 </body>
 </html>
